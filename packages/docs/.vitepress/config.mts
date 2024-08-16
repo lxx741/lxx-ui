@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'My Awesome Project',
+  title: 'LXX-UI',
   description: 'A VitePress Site',
   base: '/lxx-ui/',
   themeConfig: {

@@ -8,7 +8,7 @@
     "dev": "pnpm --filter @lxx-ui/play dev",
     "docs:dev": "pnpm --filter @lxx-ui/docs dev",
     "docs:build": "pnpm --filter @lxx-ui/docs build",
-    "test": "echo 'todo'"
+    "test": "pnpm --filter @lxx-ui/components test"
   },
   "keywords": [],
   "author": "",
