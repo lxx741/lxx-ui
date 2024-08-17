@@ -1,7 +1,7 @@
 import type { App, Plugin } from 'vue'
 import { each } from 'lodash-es'
 
-// 定义但文件组件为插件类型
+// 定义单文件组件为插件类型
 // 即把单文件组件当成是一个插件，可被安装使用
 type SFCWithInstall<T> = T & Plugin
 
