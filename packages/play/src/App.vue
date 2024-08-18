@@ -1,3 +1,3 @@
 <template>
-  <LxxButton />
+  <LxxIcon icon="user" size="2x" color="red" />
 </template>

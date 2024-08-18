@@ -1,0 +1,16 @@
+.lxx-icon {
+  --lxx-icon-color: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  fill: currentColor;
+  color: var(--lxx-icon-color);
+  font-size: inherit;
+}
+
+@each $val in primary, info, success, warning, danger {
+  .lxx-icon--$(val) {
+    --lxx-icon-color: var(--lxx-color-$(val));
+  }
+}
