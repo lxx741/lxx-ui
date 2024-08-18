@@ -20,6 +20,23 @@
         useThrottle ? handleBtnClickThrottle(e) : handleBtnClick(e)
     "
   >
+    <template v-if="loading">
+      <slot name="loading">
+        <lxx-icon
+          class="loading-icon"
+          :icon="loadingIcon ?? 'spinner'"
+          :style="iconStyle"
+          size="1x"
+          spin
+        />
+      </slot>
+    </template>
+    <lxx-icon
+      v-if="icon && !loading"
+      :icon="icon"
+      :style="iconStyle"
+      size="1x"
+    />
     <slot></slot>
   </component>
 </template>
@@ -46,6 +63,9 @@ const _ref = ref<HTMLButtonElement>()
 const size = computed(() => ctx?.size ?? props?.size ?? '')
 const type = computed(() => ctx?.type ?? props?.type ?? '')
 const disabled = computed(() => ctx?.disabled || props?.disabled || false)
+const iconStyle = computed(() => ({
+  marginRight: slots.default ? '6px' : '0px',
+}))
 
 const handleBtnClick = (e: MouseEvent) => emits('click', e)
 const handleBtnClickThrottle = throttle(
