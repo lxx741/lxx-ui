@@ -1,4 +1,4 @@
 import type { Plugin } from 'vue'
-import { LxxButton, LxxIcon } from '@lxx-ui/components'
+import { LxxIcon, LxxButton, LxxButtonGroup } from '@lxx-ui/components'
 
-export default [LxxButton, LxxIcon] as Plugin[]
+export default [LxxIcon, LxxButton, LxxButtonGroup] as Plugin[]
