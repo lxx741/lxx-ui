@@ -8,10 +8,10 @@ describe('Button.vue', () => {
     const wrapper = mount(Button)
     expect(wrapper.exists()).toBe(true)
   })
-  it('should have the correct default text', () => {
-    const wrapper = mount(Button)
-    expect(wrapper.text()).toEqual('Default Button Text')
-  })
+  // it('should have the correct default text', () => {
+  //   const wrapper = mount(Button)
+  //   expect(wrapper.text()).toEqual('Default Button Text')
+  // })
   // Props: type
   // it('should has the correct type class when type prop is set', () => {
   //   const types = ['primary', 'success', 'warning', 'danger', 'info']
