@@ -8,12 +8,20 @@
     "dev": "pnpm --filter @lxx-ui/play dev",
     "docs:dev": "pnpm --filter @lxx-ui/docs dev",
     "docs:build": "pnpm --filter @lxx-ui/docs build",
+    "build": "run-s build-hooks build-comp",
+    "build-hooks": "cross-env NODE_ENV=production pnpm --filter @lxx-ui/hooks build",
+    "build-comp": "cross-env NODE_ENV=production pnpm --filter lxx-ui build",
     "test": "pnpm --filter @lxx-ui/components test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "vite-plugin-dts": "^3.9.1",
+    "shelljs": "^0.8.5",
+    "@types/shelljs": "^0.8.15",
+    "npm-run-all": "^4.1.5",
+    "cross-env": "^7.0.3",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
@@ -38,6 +46,7 @@
     "lxx-ui": "workspace:*",
     "@lxx-ui/hooks": "workspace:*",
     "@lxx-ui/utils": "workspace:*",
-    "@lxx-ui/theme": "workspace:*"
+    "@lxx-ui/theme": "workspace:*",
+    "@lxx-ui/vite-plugins": "workspace:*"
   }
 }
