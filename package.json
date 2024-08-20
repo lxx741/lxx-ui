@@ -11,12 +11,14 @@
     "build": "run-s build-hooks build-comp",
     "build-hooks": "cross-env NODE_ENV=production pnpm --filter @lxx-ui/hooks build",
     "build-comp": "cross-env NODE_ENV=production pnpm --filter lxx-ui build",
-    "test": "pnpm --filter @lxx-ui/components test"
+    "test": "pnpm --filter @lxx-ui/components test",
+    "release": "pnpm --filter lxx-ui release"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "release-it": "^17.3.0",
     "vite-plugin-dts": "^3.9.1",
     "shelljs": "^0.8.5",
     "@types/shelljs": "^0.8.15",
