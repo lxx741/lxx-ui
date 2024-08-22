@@ -5,6 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "storybook": "pnpm --filter @lxx-ui/play storybook",
     "dev": "pnpm --filter @lxx-ui/play dev",
     "docs:dev": "pnpm --filter @lxx-ui/docs dev",
     "docs:build": "pnpm --filter @lxx-ui/docs build",

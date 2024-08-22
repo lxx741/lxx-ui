@@ -1,0 +1,58 @@
+.er-collapse {
+  --lxx-collapse-border-color: var(--lxx-border-color-light);
+  --lxx-collapse-header-height: 48px;
+  --lxx-collapse-header-bg-color: var(--lxx-fill-color-blank);
+  --lxx-collapse-header-text-color: var(--lxx-text-color-primary);
+  --lxx-collapse-header-font-size: 13px;
+  --lxx-collapse-content-bg-color: var(--lxx-fill-color-blank);
+  --lxx-collapse-content-font-size: 13px;
+  --lxx-collapse-content-text-color: var(--lxx-text-color-primary);
+  --lxx-collapse-disabled-text-color: var(--lxx-disabled-text-color);
+  --lxx-collapse-disabled-border-color: var(--lxx-border-color-lighter);
+  border-top: 1px solid var(--lxx-collapse-border-color);
+  border-bottom: 1px solid var(--lxx-collapse-border-color);
+}
+
+.er-collapse-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--lxx-collapse-header-height);
+  line-height: var(--lxx-collapse-header-height);
+  background-color: var(--lxx-collapse-header-bg-color);
+  color: var(--lxx-collapse-header-text-color);
+  cursor: pointer;
+  font-size: var(--lxx-collapse-header-font-size);
+  font-weight: 500;
+  transition: border-bottom-color var(--lxx-transition-duration);
+  outline: none;
+  border-bottom: 1px solid var(--lxx-collapse-border-color);
+  &.is-disabled {
+    color: var(--lxx-collapse-disabled-text-color);
+    cursor: not-allowed;
+    background-image: none;
+  }
+  &.is-active {
+    border-bottom-color: transparent;
+    .header-angle {
+      transform: rotate(90deg);
+    }
+  }
+  .header-angle {
+    transition: transform var(--lxx-transition-duration);
+  }
+}
+.er-collapse-item__content {
+  will-change: height;
+  background-color: var(--lxx-collapse-content-bg-color);
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: var(--lxx-collapse-content-font-size);
+  color: var(--lxx-collapse-content-text-color);
+  border-bottom: 1px solid var(--lxx-collapse-border-color);
+  padding-bottom: 25px;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: height var(--lxx-transition-duration) ease-in-out;
+}
