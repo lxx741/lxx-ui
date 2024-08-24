@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils'
 
 import Button from './Button.vue'
 import ButtonGroup from './ButtonGroup.vue'
-import Icon from '../Icon/Icon.vue'
+import LxxIcon from '../Icon/Icon.vue'
 
 describe('按钮', () => {
   it('是否能正确显示type类名', () => {
@@ -91,7 +91,7 @@ describe('按钮', () => {
         stubs: ['LxxIcon'],
       },
     })
-    const iconElement = wrapper.findComponent(Icon)
+    const iconElement = wrapper.findComponent(LxxIcon)
 
     expect(wrapper.find('.loading-icon').exists()).toBe(true)
     expect(iconElement.exists()).toBeTruthy()
@@ -146,7 +146,7 @@ describe('按钮', () => {
     expect(wrapper.find('button').element.disabled).toBeTruthy()
     wrapper.get('button').trigger('click')
     expect(wrapper.emitted()).not.toHaveProperty('click')
-    const iconElement = wrapper.findComponent(Icon)
+    const iconElement = wrapper.findComponent(LxxIcon)
     expect(iconElement.exists()).toBeTruthy()
     expect(iconElement.attributes('icon')).toBe('spinner')
   })
@@ -164,7 +164,7 @@ describe('按钮', () => {
       },
     })
 
-    const iconElement = wrapper.findComponent(Icon)
+    const iconElement = wrapper.findComponent(LxxIcon)
     expect(iconElement.exists()).toBeTruthy()
     expect(iconElement.attributes('icon')).toBe('arrow-up')
   })

@@ -3,7 +3,7 @@ import { fn, within, userEvent, expect, clearAllMocks } from '@storybook/test'
 import { set } from 'lodash-es'
 
 import { LxxButton, LxxButtonGroup } from 'lxx-ui'
-// import 'lxx-ui/dist/theme/Button.css'
+import 'lxx-ui/dist/theme/Button.css'
 
 type Story = StoryObj<typeof LxxButton> & { argTypes?: ArgTypes }
 

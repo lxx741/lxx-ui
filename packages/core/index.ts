@@ -1,9 +1,16 @@
-import { makeInstaller } from '@lxx-ui/utils'
+import makeInstaller from './makeInstaller'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import components from './components'
+import printLogo from './printLogo'
 import '@lxx-ui/theme/index.css'
+
+printLogo()
+
+library.add(fas)
 const installer = makeInstaller(components)
 
-// 分别导出，使用时可以按需导入并注册
-export * from '../components'
-// 默认导出，使用时就将所有组件都注册
+export * from '@lxx-ui/components'
+// export * from '@lxx-ui/locale'
+
 export default installer

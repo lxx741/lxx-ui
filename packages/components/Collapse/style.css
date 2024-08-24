@@ -1,4 +1,4 @@
-.er-collapse {
+.lxx-collapse {
   --lxx-collapse-border-color: var(--lxx-border-color-light);
   --lxx-collapse-header-height: 48px;
   --lxx-collapse-header-bg-color: var(--lxx-fill-color-blank);
@@ -13,7 +13,7 @@
   border-bottom: 1px solid var(--lxx-collapse-border-color);
 }
 
-.er-collapse-item__header {
+.lxx-collapse-item__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,7 @@
     transition: transform var(--lxx-transition-duration);
   }
 }
-.er-collapse-item__content {
+.lxx-collapse-item__content {
   will-change: height;
   background-color: var(--lxx-collapse-content-bg-color);
   overflow: hidden;

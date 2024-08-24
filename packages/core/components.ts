@@ -5,6 +5,7 @@ import {
   LxxButtonGroup,
   LxxCollapse,
   LxxCollapseItem,
+  LxxAlert,
 } from '@lxx-ui/components'
 
 export default [
@@ -13,4 +14,5 @@ export default [
   LxxButtonGroup,
   LxxCollapse,
   LxxCollapseItem,
+  LxxAlert,
 ] as Plugin[]

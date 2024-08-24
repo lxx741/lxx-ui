@@ -34,7 +34,8 @@
 import { computed, inject } from 'vue'
 import type { CollapseItemProps } from './types'
 import { COLLAPSE_CTX_KEY } from './constants'
-import transitionEvents from "./transitionEvents";
+import transitionEvents from './transitionEvents'
+import LxxIcon from '../Icon/Icon.vue'
 
 defineOptions({ name: 'LxxCollapseItem' })
 const props = defineProps<CollapseItemProps>()
