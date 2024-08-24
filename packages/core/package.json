@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "基于Vue3 + TS的组件库",
   "type": "module",
-  "main": "./dist/umd/index.cjs",
+  "main": "./dist/umd/index.umd.cjs",
   "module": "./dist/es/index.js",
   "types": "./dist/types/core/index.d.ts",
   "files": [
