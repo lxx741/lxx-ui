@@ -46,7 +46,7 @@ export default defineConfig({
     }),
     hooks({
       rmFiles: ['./dist/es', './dist/theme', './dist/types'],
-      afterBuild: moveStyles,
+      afterBuild: moveStyles, // 打包后移动样式文件
     }),
     terser({
       compress: {

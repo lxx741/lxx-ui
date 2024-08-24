@@ -44,10 +44,12 @@
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
+    "@vitepress-preview/component": "workspace:*",
+    "@lxx-ui/vite-plugins": "workspace:*",
+    "@lxx-ui/locale": "workspace:*",
     "@lxx-ui/hooks": "workspace:*",
     "@lxx-ui/theme": "workspace:*",
     "@lxx-ui/utils": "workspace:*",
-    "@lxx-ui/vite-plugins": "workspace:*",
     "lodash-es": "^4.17.21",
     "lxx-ui": "workspace:*",
     "rimraf": "^6.0.1",

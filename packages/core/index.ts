@@ -11,6 +11,6 @@ library.add(fas)
 const installer = makeInstaller(components)
 
 export * from '@lxx-ui/components'
-// export * from '@lxx-ui/locale'
+export * from '@lxx-ui/locale'
 
 export default installer

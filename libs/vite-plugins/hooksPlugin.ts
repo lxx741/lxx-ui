@@ -1,6 +1,6 @@
 import { each, isFunction } from 'lodash-es'
 import shell from 'shelljs'
-
+// 自定义vite插件，在构建前后做一些额外的事
 export default function hooksPlugin({
   rmFiles = [],
   beforeBuild,
